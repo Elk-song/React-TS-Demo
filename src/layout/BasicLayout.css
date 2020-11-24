@@ -1,0 +1,14 @@
+.react-demo-layout {
+  height: 100%;
+}
+.ant-layout {
+  height: 100%;
+  overflow: hidden;
+}
+.ant-layout .ant-layout-header {
+  color: rgba(255, 255, 255, 0.8);
+}
+.ant-layout .ant-layout-content {
+  padding: 20px;
+  overflow: auto;
+}

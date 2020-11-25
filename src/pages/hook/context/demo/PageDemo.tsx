@@ -12,11 +12,17 @@ function PageDemo(props: IProps) {
     <a href={user.permalink}>
       <div>{props.avatarSize}</div>
     </a>
+  );
+  const childTop = (
+    <div>
+      {user.permalink}
+    </div>
   )
-  return (
-    
-    <PageLayout userLink={userLink}/>
 
-    )
+  return (
+
+    <PageLayout childTop={childTop} userLink={userLink} />
+
+  )
 }
 export default PageDemo;

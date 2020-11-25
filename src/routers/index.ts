@@ -23,25 +23,31 @@ const routes: IRouteConfig[] = [
     name: "useReducer",
     path: "/hook/useReducer",
     key: "useReducer",
-    component: React.lazy(() => import("@/pages/hook/reducer/UseReducer"))
+    component: React.lazy(() => import("@/pages/hook/reducer"))
   },
   {
     name: "useContext",
     path: "/hook/useContext",
     key: "useContext",
-    component: React.lazy(() => import("@/pages/hook/context/ContextDemo"))
+    component: React.lazy(() => import("@/pages/hook/context"))
   },
   {
     name: "others",
     path: "/hook/others",
     key: "others",
-    component: React.lazy(() => import("@/pages/hook/OtherHook"))
+    component: React.lazy(() => import("@/pages/hook/others/OtherHooks"))
   },
+  // {
+  //   name: "组合测试",
+  //   path: "/combination/demo1",
+  //   key: "combination-1-1",
+  //   component: React.lazy(() => import("@/pages/RecursionDemo"))
+  // },
   {
-    name: "组合测试",
-    path: "/combination/demo1",
-    key: "combination-1-1",
-    component: React.lazy(() => import("@/pages/RecursionDemo"))
+    name: "组合-包含",
+    path: "/contains/demo",
+    key: "contains-demo",
+    component: React.lazy(() => import("@/pages/contains"))
   },
   {
     name: "路由demo1",

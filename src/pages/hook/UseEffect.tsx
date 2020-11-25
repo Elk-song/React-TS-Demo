@@ -56,7 +56,7 @@ function UseEffect() {
 
 
   return (
-    <div>
+    <>
       <Card title="知识点">
         <h2>useEffect</h2>
         <p><a href="https://react.docschina.org/docs/hooks-effect.html">学习链接 </a></p>
@@ -75,6 +75,7 @@ function UseEffect() {
         <div >
           <h3 className="color-red">注意：</h3>
           <p>不能直接在useEffect中使用async函数</p>
+          <p>不应在useEffect函数中执行阻塞浏览器更新屏幕的操作</p>
           <p>书写方式查看<span className="color-red">loading---Demo</span></p>
         </div>
       </Card>
@@ -89,7 +90,7 @@ function UseEffect() {
             (isLoading ? (<div>loading....</div>) : <p>{hitsPerPage}</p>)
         }
       </div>
-    </div>
+    </>
   )
 }
 export default UseEffect;

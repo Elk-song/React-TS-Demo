@@ -1,18 +1,25 @@
-import { Card } from 'antd';
-import React, { useCallback, useEffect } from 'react';
+import { Button, Card } from 'antd';
+import React, { useCallback, useEffect, useState } from 'react';
 import useFetchApi from "./UseFetchApi";
+
+const query:string="redux";
+
 function CustomDemo() {
   // 自定义的hook
-  const { hitsPerPage, isLoading, isError, doFetch } = useFetchApi("redux");
-  // 减少子级不必要的render，useMemo的语法糖
-  const doFetchDispatch = useCallback(doFetch,[]);
-  
+  const state = useFetchApi(query);
+
+  const doFetchDispatch = useCallback(state.doFetch, [query]);
+
   useEffect(() => {
     doFetchDispatch();
   }, [doFetchDispatch])
 
+  const [data, setData] = useState(0);
+  const updateData = () => {
+    setData(data + 3);
+  }
   return (
-    <div>
+    <>
       <Card title="知识点">
         <h2>自定义Hook</h2>
         <p>
@@ -23,14 +30,15 @@ function CustomDemo() {
         <p>3. 每次调用 Hook，它都会获取独立的 state</p>
       </Card>
       <div className="content-demo">
+        <Button onClick={updateData}>更新测试</Button>
         <p>自定义Hook根据传值渲染的demo:</p>
         {
-          isError ?
+          state.isError ?
             <div>Something went wrong ...</div> :
-            (isLoading ? (<div>loading....</div>) : <p>{hitsPerPage}</p>)
+            (state.isLoading ? (<div>loading....</div>) : <p>{state.hitsPerPage}</p>)
         }
       </div>
-    </div>
+    </>
   )
 }
 export default CustomDemo;

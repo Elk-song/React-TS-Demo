@@ -50,17 +50,24 @@ export const menuList: IMenu[] = [
 
     ]
   },
+
   {
-    key: "combination-1",
+    key: "contains",
     title: "组合",
-    path: "/combination",
+    path: "/contains",
     children: [
       {
-        key: "combination-1-1",
-        title: "组合测试1",
-        path: "/combination/demo1",
+        key: "contains-demo",
+        title: "组合-包含",
+        path: "/contains/demo",
         children: []
-      }
+      },
+      // {
+      //   key: "contains-1-1",
+      //   title: "组合测试1",
+      //   path: "/combination/demo1",
+      //   children: []
+      // }
     ]
   },
   {

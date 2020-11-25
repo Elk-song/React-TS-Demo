@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import axios from "axios";
 function useFetchApi(props: string) {
+  console.log("hook加载......");
+
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [url, setUrl] = useState("")
-
-
+  const [url, setUrl] = useState("");
   const [hitsPerPage, setFetchData] = useState(0);
+
   const doFetch = () => {
     setUrl(`http://hn.algolia.com/api/v1/search?query=${props}`);
   };
@@ -29,6 +30,6 @@ function useFetchApi(props: string) {
     }
 
   }, [url]);
-  return { hitsPerPage, isLoading, isError, doFetch };
+  return { hitsPerPage, isLoading, isError, doFetch }
 }
 export default useFetchApi;

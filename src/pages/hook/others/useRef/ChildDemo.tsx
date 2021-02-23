@@ -1,7 +1,7 @@
 import { Input } from 'antd';
 import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 const ChildDemo = forwardRef((props: any, ref: any) => {
-  let childRef = useRef(null);
+  const childRef = useRef(null);
   const [state, setState] = useState("")
   const handleChange = (event: any) => {
     setState(event.target.value);

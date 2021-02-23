@@ -1,3 +1,5 @@
+import { Children } from "react";
+
 export interface IMenu {
   key: string;
   title: string;
@@ -6,6 +8,12 @@ export interface IMenu {
   icon?: string;
 }
 export const menuList: IMenu[] = [
+  {
+    key: "home",
+    title: "home",
+    path: "/home",
+    children: []
+  },
   {
     key: "hook",
     title: "hook",
@@ -79,6 +87,19 @@ export const menuList: IMenu[] = [
         key: "router-1",
         title: "路由demo1",
         path: "router/demo1",
+        children: []
+      }
+    ]
+  },
+  {
+    key: "classComponent",
+    title: "类组件",
+    path: "/class",
+    children: [
+      {
+        key: 'class-inject',
+        title: "注入测试",
+        path: "/class/inject",
         children: []
       }
     ]

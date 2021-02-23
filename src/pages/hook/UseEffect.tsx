@@ -1,8 +1,8 @@
 import { Button, Card, Divider } from 'antd';
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-const url = "http://hn.algolia.com/api/v1/search?query=redux";
 function UseEffect() {
+  const url = "http://hn.algolia.com/api/v1/search?query=redux";
   const [count, setCount] = useState(0);
   const updateCount = () => {
     setCount(count+1);

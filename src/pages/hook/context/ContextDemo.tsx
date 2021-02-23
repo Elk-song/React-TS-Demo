@@ -19,7 +19,7 @@ function ContextDemo() {
     <div className="context-demo">
       <Card title="知识点">
         <h2>useContext</h2>
-        <p></p>
+        <p/>
       </Card>
       <div className="content-demo">
         <h3>层层递归型:</h3>

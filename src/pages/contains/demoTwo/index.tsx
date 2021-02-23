@@ -5,8 +5,7 @@ function DemoTwo() {
   return (
     <>
       <Card title="预留插槽，自行约定">
-        <ChildDemo top={(<div>上</div>)} bottom={(<div>下</div>)}>
-        </ChildDemo>
+        <ChildDemo top={(<div>上</div>)} bottom={(<div>下</div>)}/>
       </Card>
     </>
   )

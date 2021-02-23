@@ -1,6 +1,6 @@
 import { Button, Card } from 'antd';
 import React, { useState } from 'react';
-function UseState() {
+function UseState(props:any) {
   /**
    * state
    *    1. 它与 class 里面的 this.state 提供的功能完全相同
@@ -21,14 +21,13 @@ function UseState() {
     // 更新state
     setState("被修改的值");
   }
-
+  console.log(props);
+  
   const updateData = () => {
     setData(data + 1);
   }
-
-
-  // const 
   return (
+   
     <>
       <Card title="知识点">
         <h2>state</h2>
@@ -57,4 +56,5 @@ function UseState() {
     </ >
   )
 }
+
 export default UseState;

@@ -25,8 +25,8 @@ class MainService {
 }
 
 
-container.bind<MainService>(IocTypes.main).to(MainService);
-container.bind<IInjectDemo>(IocTypes.examples).to(InjectDemo);
+// container.bind<MainService>(IocTypes.main).to(MainService);
+// container.bind<IInjectDemo>(IocTypes.examples).to(InjectDemo);
 
-export const service = container.get(MainService);
+// export const service = container.get(MainService);
 

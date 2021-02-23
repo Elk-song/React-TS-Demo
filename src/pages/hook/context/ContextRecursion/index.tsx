@@ -24,7 +24,7 @@ function ContextDemo() {
         <ContextChild />
       </ThemeContext.Provider >
       <Divider />
-      <h3 className="color-red"></h3>
+      <h3 className="color-red"/>
     </>
   )
 }

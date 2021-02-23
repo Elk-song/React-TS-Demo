@@ -1,8 +1,9 @@
 export interface IRouteConfig {
-  name: string;
-  key:string;
+  title: string;
+  key: string;
   path: string;
-  component: any;
+  component?: any;
   exact?: boolean;
-  routes?: IRouteConfig[];
+  redirect?: string;
+  children?: IRouteConfig[];
 }

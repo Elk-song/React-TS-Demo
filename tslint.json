@@ -1,9 +1,17 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "rules":{
-    "no-console":false,
-    "no-debugger":false,
-    "indent":[true, "spaces", 2],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-console": false,
+    "no-debugger": false,
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
     "no-consecutive-blank-lines": [
       true,
       2
@@ -11,7 +19,9 @@
     "jsx-no-lambda": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
-    "no-unused-expressions":false
+    "no-unused-expressions": false,
+    "no-unused-expression": false,
+    "no-var-requires": false
   },
   "linterOptions": {
     "exclude": [

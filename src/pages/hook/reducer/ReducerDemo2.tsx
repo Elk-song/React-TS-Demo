@@ -28,7 +28,7 @@ function reducer(state: IState, action: { type: string, payload?: any }) {
 }
 
 
-function ReducerDemoTwo({ }) {
+function ReducerDemoTwo() {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>

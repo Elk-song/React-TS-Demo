@@ -1,3 +1,4 @@
 export interface IInjectDemo {
-  getData():string;
+  testName: string;
+  getData(): string;
 }

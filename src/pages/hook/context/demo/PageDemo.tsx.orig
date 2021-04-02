@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from "./PageLayout";
+// import PageLayout from "./PageLayout";
 interface IProps {
   user: {
     permalink: string;
@@ -20,9 +20,15 @@ function PageDemo(props: IProps) {
   )
 
   return (
+<<<<<<< HEAD
+    <div>
+      dasdas
+    </div>
+    // <PageLayout userLink={userLink}/>
+=======
+>>>>>>> origin/main
 
     <PageLayout childTop={childTop} userLink={userLink} />
-    // <PageLayout userLink={userLink}/>
 
   )
 }

@@ -149,6 +149,45 @@ const route: IRouteConfig[] = [
       },
     ]
   },
+  {
+    title: "路由",
+    path: "/router",
+    key: "router",
+    children: [
+      {
+        title: "路由demo1",
+        path: "/router/demo1",
+        key: "router-1",
+        component: "pages/router-demo/RouterDemo"
+      },
+    ]
+  },
+  {
+    title: "类组件",
+    path: "/class",
+    key: "class",
+    children: [
+      {
+        title: "注入测试",
+        path: "/class/inject",
+        key: "class-inject",
+        component: "pages/class-demo/injectClass"
+      }
+    ]
+  },
+  {
+    title: "状态管理",
+    path: "/redux",
+    key: "redux",
+    children: [
+      {
+        title: "状态管理demo",
+        path: "/redux/demo",
+        key: "reduxDemo",
+        component: "pages/redux-demo/demo"
+      }
+    ]
+  }
 ]
 
 export default route;

@@ -103,5 +103,18 @@ export const menuList: IMenu[] = [
         children: []
       }
     ]
+  },
+  {
+    key: "redux",
+    title: "状态管理",
+    path: "/redux",
+    children: [
+      {
+        key: "reduxDemo",
+        title: "状态管理demo",
+        path: "/redux/demo",
+        children: []
+      }
+    ]
   }
 ]
